@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PHLORYDA | The Lyrical Beast & The Ghetto Preacher</title>
+
+<meta name="description" content="Official website of PHLORYDA — Nigerian rapper, singer and songwriter. Discover his music, biography, achievements, videos and latest releases.">
+
+<meta name="keywords" content="PHLORYDA, Nigerian rapper, Nigerian musician, Igbo rapper, The Lyrical Beast, The Ghetto Preacher, KALA, Scars Tears And Reality">
+
+<meta name="author" content="PHLORYDA">
+
+<style>
+:root {
+  --gold: #d6b65c;
+  --black: #080808;
+  --dark: #111111;
+  --grey: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  min-height: 85px;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #050505;
+  border-bottom: 1px solid #292929;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ddd;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  min-height: 650px;
+  padding: 65px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+  background: radial-gradient(circle at top right, #292313, #080808 55%);
+}
+
+.hero img {
+  width: min(360px, 90%);
+  max-height: 500px;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+}
+
+.hero-text {
+  max-width: 530px;
+}
+
+.hero-text .small {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 85px);
+  line-height: 1.05;
+  margin: 15px 0;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  color: var(--gold);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  color: #ccc;
+  margin: 18px 0 25px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: #080808;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 5px 7px 5px 0;
+}
+
+.button:hover {
+  background: white;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--gold);
+  font-size: 32px;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+}
+
+.about {
+  max-width: 950px;
+  margin: auto;
+  color: #ccc;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 18px;
+}
+
+.dark-section {
+  background: var(--dark);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #191919;
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.music-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-bottom: 45px;
+}
+
+.music-feature img {
+  width: min(280px, 90%);
+  border: 2px solid var(--gold);
+}
+
+.music-feature div {
+  max-width: 450px;
+}
+
+.music-feature h3 {
+  color: var(--gold);
+  font-size: 27px;
+}
+
+.music-feature p {
+  color: #bbb;
+  margin: 10px 0;
+}
+
+.music-list {
+  columns: 2;
+  column-gap: 40px;
+  color: #ccc;
+}
+
+.music-list li {
+  margin: 5px 0 5px 20px;
+  break-inside: avoid;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.socials a {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.socials a:hover {
+  background: var(--gold);
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background: #050505;
+  color: #888;
+  border-top: 1px solid #292929;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+@media(max-width: 650px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .music-list {
+    columns: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PHLORYDA</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#connect">Connect</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <img src="assets/phloryda-portrait.jpg" alt="PHLORYDA official artist portrait">
+
+  <div class="hero-text">
+    <div class="small">OFFICIAL ARTIST WEBSITE</div>
+    <h1>PHLORYDA</h1>
+    <div class="tagline">THE LYRICAL BEAST & THE GHETTO PREACHER</div>
+    <p>
+      Nigerian rapper, singer and songwriter.
+      Music rooted in reality, ambition, survival and the
+      everyday experiences of life.
+    </p>
+    <a class="button" href="#music">EXPLORE MY MUSIC</a>
+    <a class="button" href="https://linktr.ee/phloryda18">ALL MY LINKS</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">ABOUT PHLORYDA</h2>
+
+  <div class="about">
+    <p>
+      Derick Chibueze Madu, widely known by his stage name
+      PHLORYDA, is a Nigerian musician from the Eastern region
+      of Nigeria and based in Rivers State. He is a songwriter,
+      rapper and singer known for blending native Igbo and
+      English into his distinctive musical style.
+    </p>
+
+    <p>
+      A graduate of Civil Engineering from Michael Okpara
+      University of Agriculture, Umudike (MOUAU), PHLORYDA
+      continues to build his place in the Nigerian music scene
+      through his sound, energetic performances and consistent
+      creative work.
+    </p>
+
+    <p>
+      His debut project, <strong>Scars, Tears And Reality
+      (S.T.A.R)</strong>, explores ambition, survival, reality,
+      motivation and everyday life.
+    </p>
+
+    <p>
+      He has opened stages at JERIQ STADIUM CONCERT 2024 in
+      Onitsha and AGUERO BANKS CONCERT 2024 in Enugu, sharing
+      stages with artists including Bella Shmurda, Ajebo
+      Hustlers, BlaqBonez and Wizard Chan. He has also performed
+      at OY TO THE WORLD CARNIVAL.
+    </p>
+
+    <p>
+      His music has received airplay on Nigerian radio stations,
+      while his video for <strong>Stacking</strong> appeared
+      on Soundcity TV. In 2026, he released
+      <strong>KALA featuring Caften</strong>, accompanied by
+      an official music video.
+    </p>
+  </div>
+</section>
+
+<section class="dark-section" id="achievements">
+  <h2 class="section-title">ACHIEVEMENTS & MILESTONES</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>2018</h3>
+      <p>Best Indigenous Rapper — Association of Civil Engineering Students award night.</p>
+    </div>
+
+    <div class="card">
+      <h3>2019</h3>
+      <p>Best Indigenous Rapper — MOUAU Students' Union Government award night.</p>
+    </div>
+
+    <div class="card">
+      <h3>2019</h3>
+      <p>Second runner-up — MOUAU Best Rapper Competition.</p>
+    </div>
+
+    <div class="card">
+      <h3>2019</h3>
+      <p>Winner — MOUAU Matric Fiesta rap battle.</p>
+    </div>
+
+    <div class="card">
+      <h3>2019</h3>
+      <p>First runner-up — MC Galaxy Campus Tour, MOUAU.</p>
+    </div>
+
+    <div class="card">
+      <h3>2022</h3>
+      <p>Participated in Hennessy Cypher in Owerri, judged by respected figures including Illbliss and Vector.</p>
+    </div>
+
+    <div class="card">
+      <h3>Live Performances</h3>
+      <p>Multiple rap battle wins and performances at universities and events, including RSU, Abia Poly and FUTO.</p>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <h2 class="section-title">MUSIC & RELEASES</h2>
+
+  <div class="music-feature">
+    <img src="assets/star-ep-artwork.jpeg" alt="Scars, Tears And Reality S.T.A.R EP artwork">
+
+    <div>
+      <h3>SCARS, TEARS AND REALITY (S.T.A.R)</h3>
+      <p>PHLORYDA's debut project — a musical journey through reality, ambition, survival and life.</p>
+      <a class="button" href="https://music.apple.com/ng/album/scars-tears-and-reality-s-t-a-r/1768677512">LISTEN ON APPLE MUSIC</a>
+      <a class="button" href="https://tr.ee/chiqvWcCKb">STREAM THE PROJECT</a>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>RED EYES THE EP</h3>
+      <p>Joint EP with Benhandsome, released November 13, 2021.</p>
+      <p>Red Eyes • Yahoo Boy and Client • Like Dat</p>
+    </div>
+
+    <div class="card">
+      <h3>UPGRADED (THE EP)</h3>
+      <p>Control • No Shaking • Able • Baba God • Inner Side</p>
+    </div>
+
+    <div class="card">
+      <h3>FEATURED RELEASE</h3>
+      <p><strong>KALA</strong> featuring Caften — 2026 release with official video.</p>
+    </div>
+  </div>
+
+  <h3 style="color:var(--gold);margin:35px 0 15px;">MORE RELEASES & FREESTYLES</h3>
+  <ul class="music-list">
+    <li>Osinachi (ft Benhandsome & Hype Man Too Talk)</li>
+    <li>Ghetto Sermon V</li>
+    <li>Ghetto Sermon IV</li>
+    <li>Ghetto Sermon III</li>
+    <li>Ghetto Sermon II</li>
+    <li>Ghetto Sermon I</li>
+    <li>Mata Matas Arising</li>
+    <li>Heart (ft Evansi)</li>
+    <li>ALERT</li>
+    <li>Barlogy</li>
+    <li>Hustle (ft Chidiebere)</li>
+    <li>DRILL SESSION</li>
+    <li>Monster Energy (Freestyle)</li>
+    <li>Small Thing</li>
+    <li>New Month Freestyle</li>
+    <li>Prophecy (ft Wittylane)</li>
+    <li>All Day</li>
+    <li>East Attack</li>
+    <li>Say No More</li>
+    <li>Hama</li>
+  </ul>
+
+  <h3 style="color:var(--gold);margin:35px 0 15px;">COLLABORATIONS</h3>
+  <ul class="music-list">
+    <li>Everything — Sonny Pee ft PHLORYDA</li>
+    <li>Atansified — ft El Cyph</li>
+    <li>Fake Life — ft Spicey</li>
+    <li>Cha — ft Kizziboy</li>
+    <li>Relationship — Stylez Omatta ft PHLORYDA</li>
+    <li>OY BREED — Savage Xtra ft PHLORYDA</li>
+    <li>Feel My Legs — Savage Xtra ft Goodlife, PHLORYDA & Moseric</li>
+    <li>Boys Oye — Richyz Kings ft Mr Bankz & PHLORYDA</li>
+  </ul>
+
+  <h3 style="color:var(--gold);margin:35px 0 15px;">COVERS</h3>
+  <ul class="music-list">
+    <li>Egedege</li>
+    <li>Geng</li>
+    <li>Better</li>
+    <li>Fuck You</li>
+    <li>Wisdom</li>
+    <li>Gold Medal</li>
+    <li>Brotherman</li>
+    <li>I Do This</li>
+    <li>Bitcoin</li>
+  </ul>
+</section>
+
+<section class="dark-section" id="gallery">
+  <h2 class="section-title">PHOTO GALLERY</h2>
+
+  <div class="gallery">
+    <img src="assets/gallery-stage.jpg" alt="PHLORYDA performing live">
+    <img src="assets/gallery-studio.jpg" alt="PHLORYDA in the studio">
+    <img src="assets/gallery-editorial.jpg" alt="PHLORYDA artist portrait">
+    <img src="assets/gallery-green-stage.jpg" alt="PHLORYDA performing on stage">
+    <img src="assets/gallery-crowd.jpg" alt="PHLORYDA performing for a crowd">
+  </div>
+</section>
+
+<section id="connect">
+  <h2 class="section-title">CONNECT WITH PHLORYDA</h2>
+
+  <div class="socials">
+    <a href="https://linktr.ee/phloryda18">All Music & Socials</a>
+    <a href="https://www.instagram.com/phloryda_/">Instagram</a>
+    <a href="https://www.tiktok.com/@officialphloryda">TikTok</a>
+    <a href="https://x.com/phloryda1">X / Twitter</a>
+    <a href="https://www.facebook.com/share/1KCNLQxLCX/">Facebook</a>
+    <a href="https://youtube.com/@phlorydalyricalbeast3981">YouTube</a>
+    <a href="https://audiomack.com/phloryda_lyricalbeast">Audiomack</a>
+    <a href="https://open.spotify.com/artist/23L0LOHM0XaMqLSFwn0frh">Spotify</a>
+    <a href="https://music.apple.com/ng/artist/phloryda/1638084021">Apple Music</a>
+    <a href="https://www.boomplay.com/share/artist/35330650">Boomplay</a>
+    <a href="https://genius.com/Phloryda">Genius</a>
+    <a href="https://musicbrainz.org/artist/9cf90e78-46f0-491a-925f-8e7379302e59">MusicBrainz</a>
+    <a href="https://whatsapp.com/channel/0029VbD9MqvIHphHRcqHug1d">WhatsApp Channel</a>
+    <a href="https://t.me/Phlorydalyricalbeast">Telegram</a>
+    <a href="https://www.threads.com/@phloryda_">Threads</a>
+    <a href="https://www.snapchat.com/add/phloryda_2021">Snapchat</a>
+    <a href="https://soundcloud.com/user-848899451">SoundCloud</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>PHLORYDA</strong> — THE LYRICAL BEAST & THE GHETTO PREACHER</p>
+  <p>© 2026 PHLORYDA. All rights reserved.</p>
+  <p>Official Artist Website</p>
+</footer>
+
+</body>
+</html>
